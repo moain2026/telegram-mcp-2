@@ -1,0 +1,28 @@
+محتويات telegram_mcp_documentation.zip
+
+DOCUMENTATION/
+- README_AR.md: ملخص الحزمة وما تم إنجازه.
+- DEPLOYMENT_AR.md: دليل النشر على Ubuntu وتشغيل /mcp.
+- CHANGELOG_AR.md: سجل التعديلات والأدوات الجديدة.
+- SECURITY_AR.md: الأسرار والمخاطر والحدود.
+- CONTENTS_AR.txt: هذه القائمة.
+
+SOURCE_PUBLIC/
+- server.py: النسخة المحدثة من خادم MCP.
+- http_server_cloud.py: غلاف Streamable HTTP للمسار /mcp.
+- requirements.txt: اعتماديات المشروع العامة.
+- config.py: إعدادات المشروع غير السرية.
+- client.py: طبقة عميل Telegram غير السرية.
+- README.md: وثائق المشروع الأصلية إن وُجدت.
+- .env.example: نموذج إعدادات بلا قيم سرية إن وُجد.
+
+NOT_INCLUDED/
+- .env
+- جلسة Telegram أو StringSession
+- TELEGRAM_API_ID وTELEGRAM_API_HASH الحقيقية
+- رقم الهاتف وكلمة مرور 2FA ورمز تسجيل الدخول
+- رمز VNC للكمبيوتر السحابي
+- GitHub token
+- أي ملف cache أو سجل قد يحتوي على أسرار
+
+فحص الحزمة يجب أن يؤكد عدم وجود أسماء الملفات أو النصوص السرية المذكورة أعلاه.
